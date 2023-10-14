@@ -1,4 +1,4 @@
-package L01_1;
+package ru.otus.L01_1;
 
 import com.google.common.collect.Lists;
 
@@ -7,7 +7,29 @@ import java.util.*;
 /**
  * \* @author AleKras on 14.10.2023
  * \* Description:
+ *
  * \*
+ */
+/**
+ * Created by tully.
+ *
+ * Example for L01.1
+ *
+ * To start the application:
+ * mvn package
+ * java -cp ./target/L01.1-maven.jar ru.otus.l011.Main
+ * java -jar ./target/L01.1-maven.jar //java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+ * java -cp ./target/L01.1-maven.jar;C:\Users\vitaly.chibrikov\.m2\repository\com\google\guava\guava\23.0\guava-23.0.jar ru.otus.l011.Main
+ *
+ * To unzip the jar:
+ * 7z x -oJAR ./target/L01.1-maven.jar
+ * unzip -d JAR ./target/L01.1-maven.jar
+ *
+ * To build:
+ * mvn package
+ * mvn clean compile
+ * mvn assembly:single
+ * mvn clean compile assembly:single
  */
 public class Main {
 	private static final int MEASURE_COUNT = 1;
